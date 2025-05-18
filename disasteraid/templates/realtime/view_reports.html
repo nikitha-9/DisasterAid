@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/reports.css' %}">
+
+<div class="report-table-container">
+    <h2>Disaster Reports</h2>
+    {% if reports %}
+        <table class="report-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Image</th>
+                    <!-- <th>Time</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for report in reports %}
+                <tr>
+                    <td>{{ report.disaster_type }}</td>
+                    <td>{{ report.description }}</td>
+                    <td>{{ report.location }}</td>
+                    <td>
+                        {% if report.image %}
+                            <img src="{{ report.image.url }}" alt="Report Image" class="report-img">
+                        {% else %}
+                            No Image
+                        {% endif %}
+                    </td>
+                    <!-- <td>{{ report.time }}</td> -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No reports found.</p>
+    {% endif %}
+</div>
+{% endblock %}

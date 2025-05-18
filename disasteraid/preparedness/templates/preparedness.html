@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script> </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Disaster Preparedness Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#kits">Emergency Kits</a></li>
+                    <li><a href="#plans">Family Plans</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#alerts">Alerts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2>Be Prepared, Stay Safe.</h2>
+                <p>Your comprehensive guide to preparing for various disasters.</p>
+                <a href="#kits" class="btn btn-primary">Build Your Kit Now!</a>
+            </div>
+        </section>
+
+        <section id="kits" class="content-section">
+            <div class="container">
+                <h2>Emergency Kits</h2>
+                <p>Learn what to include in your essential emergency kit.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Basic Emergency Kit</h3>
+                        <ul>
+                            <li>Water (1 gallon per person per day)</li>
+                            <li>Non-perishable food</li>
+                            <li>First aid kit</li>
+                            <li>Battery-powered radio</li>
+                            <li>Flashlight</li>
+                            <li>Whistle</li>
+                            <li>Dust mask</li>
+                            <li>Wrench or pliers</li>
+                            <li>Manual can opener</li>
+                            <li>Local maps</li>
+                            <li>Cell phone with charger</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3>Special Considerations</h3>
+                        <p>Items for infants, pets, and individuals with disabilities.</p>
+                        <ul>
+                            <li>Baby formula and diapers</li>
+                            <li>Pet food and extra water</li>
+                            <li>Prescription medications</li>
+                            <li>Medical equipment</li>
+                            <li>Assistive devices</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans" class="content-section grey-bg">
+            <div class="container">
+                <h2>Family Emergency Plans</h2>
+                <p>Create a step-by-step plan for your family in case of a disaster.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="icon fas fa-phone-alt"></i>
+                        <h3>Communication Plan</h3>
+                        <p>Establish meeting points and out-of-state contacts.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        <h3>Evacuation Routes</h3>
+                        <p>Know your primary and secondary evacuation paths.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="icon fas fa-file-alt"></i>
+                        <h3>Important Documents</h3>
+                        <p>Keep copies of vital documents in a waterproof bag.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Start Your Plan</a>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <div class="container">
+                <h2>Additional Resources</h2>
+                <p>Links to government agencies, educational materials, and more.</p>
+                <ul class="resource-list">
+                    <li><a href="https://www.ready.gov/" target="_blank">Ready.gov</a></li>
+                    <li><a href="https://www.fema.gov/" target="_blank">FEMA</a></li>
+                    <li><a href="https://www.redcross.org/" target="_blank">American Red Cross</a></li>
+                    <li><a href="https://www.weather.gov/" target="_blank">National Weather Service</a></li>
+                    <li><a href="https://www.cdc.gov/disasters/index.html" target="_blank">CDC - Emergency Preparedness</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="alerts" class="content-section grey-bg">
+            <div class="container">
+                <h2>Disaster Alerts & News</h2>
+                <p>Stay informed about current threats and emergency updates.</p>
+                <div id="alert-feed" class="alert-feed">
+                    </div>
+                <a href="#" class="btn btn-secondary">View All Alerts</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Disaster Preparedness Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/disaster_preparedness.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/predict.css' %}">
+
+<div class="predict-container">
+    <h2>Disaster Prediction</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Temperature:</label><input type="number" name="temperature" required><br>
+        <label>Humidity:</label><input type="number" name="humidity" required><br>
+        <label>Wind Speed:</label><input type="number" name="wind_speed" required><br>
+        <label>Rainfall (mm):</label><input type="number" name="rainfall" required><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not None %}
+        <div class="result">
+            <h3>Prediction:</h3>
+            <p>{{ prediction }}</p>
+
+            {% if prediction == 1 %}
+                <p style="color:red;">⚠️ Disaster likely</p>
+            {% else %}
+                <p style="color:green;">✅ No disaster predicted</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,153 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Recovery Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/recovery.css' %}">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Disaster Recovery Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#assistance">Assistance Programs</a></li>
+                    <li><a href="#resources">Recovery Resources</a></li>
+                    <li><a href="#volunteer">Volunteer & Donate</a></li>
+                    <li><a href="#news">Latest News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2>Recovering Together</h2>
+                <p>Your source for information and support after a disaster.</p>
+                <a href="#assistance" class="btn btn-primary">Find Assistance</a>
+            </div>
+        </section>
+
+        <section id="assistance" class="content-section">
+            <div class="container">
+                <h2>Assistance Programs</h2>
+                <p>Find programs that can help you get back on your feet.</p>
+                <div class="program-grid">
+                    <div class="program-card">
+                        <h3>FEMA Individual Assistance</h3>
+                        <p>Financial help for housing, repairs, and other needs.</p>
+                        <a href="https://www.fema.gov/assistance/individual" class="btn btn-secondary" target="_blank">Learn More</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>Small Business Administration (SBA) Loans</h3>
+                        <p>Low-interest loans for businesses of all sizes.</p>
+                        <a href="https://www.sba.gov/funding-programs/disaster-assistance" class="btn btn-secondary" target="_blank">Details</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>State and Local Aid</h3>
+                        <p>Programs offered by your state and local governments.</p>
+                        <a href="https://www.usa.gov/state-local-governments" class="btn btn-secondary" target="_blank">View Programs</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>Charitable Organizations</h3>
+                        <p>Assistance from non-profit organizations.</p>
+                        <a href="https://www.redcross.org/" class="btn btn-secondary" target="_blank">Get Help</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section grey-bg">
+            <div class="container">
+                <h2>Recovery Resources</h2>
+                <p>Essential tools and information for your recovery journey.</p>
+                <div class="resource-list">
+                    <div class="resource-item">
+                        <i class="fas fa-house-damage"></i>
+                        <h3>Housing Assistance</h3>
+                        <p>Finding temporary and permanent housing.</p>
+                        <a href="https://www.hudexchange.info/programs/rhp/" target="_blank">Learn More</a>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Employment Support</h3>
+                        <p>Job search assistance and unemployment benefits.</p>
+                        <a href="https://recres.org/get-help/eap/" target="_blank">Learn More</a>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Mental Health Services</h3>
+                        <p>Counseling and support for emotional well-being.</p>
+                        <a href="https://www.thelivelovelaughfoundation.org/find-help/helplines" target="_blank">Learn More</a>
+                    </div>
+                     <div class="resource-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Financial Assistance</h3>
+                        <p>Help with budgeting and financial planning.</p>
+                        <a href="https://communityrecoveryteam.org/recovery-financial-assistance/" target="_blank">Learn More</a>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-first-aid"></i>
+                        <h3>Medical Assistance</h3>
+                        <p>Access to healthcare and medications.</p>
+                        <a href="https://www.ketto.org/cause/medical-fundraising?utm_source=external_Ketto&utm_medium=google-search&utm_campaign=S14_5000_SALE_Medical_KY_ALL_CLK_IND&utm_term=p_medical%20charity&utm_content=homepage_resp_ad1&utm_placement=KT20_AG_1865_Medical_Generic&gad_source=1&gad_campaignid=21416644285&gbraid=0AAAAAol46YMVvvyNLE5kzxGCPzaHysh_S&gclid=CjwKCAjw56DBBhAkEiwAaFsG-jsXI_u3HMM5WC8Y5eP2DdwpbcnNUXoHu1BwmhF6l_9zn-EVTmcz4BoCXbUQAvD_BwE" target="_blank">Learn More</a>
+                    </div>
+                    <div class="resource-item">
+                         <i class="fas fa-utensils"></i>
+                        <h3>Food Assistance</h3>
+                        <p>Finding food banks and meal programs.</p>
+                        <a href="https://sharefood.eatrightindia.gov.in/" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="content-section">
+            <div class="container">
+                <h2>Volunteer & Donate</h2>
+                <p>Learn how you can help those affected by the disaster.</p>
+                <div class="volunteer-options">
+                    <div class="volunteer-card">
+                        <h3>Volunteer</h3>
+                        <p>Offer your time and skills to support recovery efforts.</p>
+                        <a href="https://www.serve.gov/" class="btn btn-secondary" target="_blank">Volunteer Now</a>
+                    </div>
+                    <div class="volunteer-card">
+                        <h3>Donate</h3>
+                        <p>Contribute to organizations providing direct assistance.</p>
+                        <a href="https://www.fema.gov/about/openfema/fema-individual-assistance-program-data#donate" class="btn btn-secondary" target="_blank">Donate Now</a>
+                    </div>
+                    <div class="volunteer-card">
+                        <h3>Fundraise</h3>
+                        <p>Start a campaign to support long-term recovery.</p>
+                        <a href="https://www.gofundme.com/" class="btn btn-secondary" target="_blank">Start Fundraising</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="content-section grey-bg">
+            <div class="container">
+                <h2>Latest News</h2>
+                <p>Stay updated on the latest recovery efforts and announcements.</p>
+                <div id="news-feed" class="news-feed">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Disaster Recovery Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/recovery.js' %}"></script>
+</body>
+</html>

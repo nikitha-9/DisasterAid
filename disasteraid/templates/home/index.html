@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<div class="container">
+    <h2>Welcome to DisasterAid Platform</h2>
+    <p>This platform helps with:</p>
+    <ul>
+        <li>Disaster Preparedness</li>
+        <li>Real-Time Disaster Reporting</li>
+        <li>Post-Disaster Resource Recovery</li>
+    </ul>
+
+    <div class="button-container">
+        <a href="/admin/" class="route-button">Admin Panel</a>
+        <a href="/preparedness/" class="route-button">Disaster Preparedness</a>
+        <a href="/realtime/" class="route-button">Report Disaster</a>
+        <a href="/realtime/reports/" class="route-button">View Disaster Reports</a>
+        <a href="/recovery/" class="route-button">Recovery Resources</a>
+       <a href="{% url 'predict_disaster' %}"  class="route-button">Predict Disaster</a>
+
+
+    </div>
+</div>
+{% endblock %}

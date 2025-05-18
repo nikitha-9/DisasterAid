@@ -1,0 +1,35 @@
+.predict-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.predict-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.predict-container form {
+    display: flex;
+    flex-direction: column;
+}
+.predict-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.predict-container button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.result {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
